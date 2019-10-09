@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <style type="text/css">
+        @font-face{
+            font-family: 'hero';
+            src: url('font/hero.ttf');
+        }
+        @font-face{
+            font-family: 'thinboy';
+            src: url('font/thinboy.ttf');
+        }
+        h1{
+              font-family: 'hero';
+              padding-bottom: 0;
+              margin: 0;
+        }
+        h3{
+        font-family: 'thinboy';
+              margin: 0;
+        }
+        h4{
+           font-size: 5vw;
+           margin-bottom: 0;
+        }
+        #tableOfContents{
+        }
+        .left{
+           padding-bottom: 18%;
+           padding-left: 5%;
+        }
+        li{
+        padding-bottom: 3%;
+        padding-top: 3%;
+        font-size: 5vw;
+        }
+       .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+
+    </style>
+    <div id="header">
+        <h1 style="font-size: 18vw" class="h_font">FERNWEH</h1>
+        <h3 style="font-size: 8vw" class="h_font">An Introduction</h3>
+    </div>
+</head>
+<body>
+<div id="tableOfContents">
+    <ol style="padding-bottom: 5%" type="1">
+        <li>
+            <a href="#your_trips">Your Trips</a>
+        </li>
+        <ol style="padding-bottom: 5%" type="a">
+            <li>
+                <a href="#new_trip">Adding a new Trip</a>
+            </li>
+            <li>
+                <a href="#delete_trip">Deleting a Trip</a>
+            </li>
+            <li>
+                <a href="#edit_trip">Editing Trip Information</a>
+            </li>
+        </ol>
+        <li>
+            <a href="#trip_info">Trip Info</a>
+        </li>
+        <ol type="a">
+            <li>
+                <a href="#travel">Travel</a>
+            </li>
+            <li>
+                <a href="#plans">Plans</a>
+            </li>
+            <li>
+                <a href="#customs">Customs and Laws</a>
+            </li>
+            <li>
+                <a href="#maps">Maps</a>
+            </li>
+            <li>
+                <a href="#credits">Credits</a>
+            </li>
+        </ol>
+    </ol>
+</div>
+<div id="textp">
+    <h4 id="your_trips">Your Trips</h4>
+    <p class="paragraph">
+        All of your future and past trips are assembled in one place on your home screen.
+        Your trips are sorted by date and shown with the name you gave it.
+        Click on any trip to access their individual info pages and to get to your travel/plan
+        tickets.
+    </p>
+    <img class="center" src="file:///android_asset/bg.PNG"
+         style="max-width:100%;height:auto;"/>
+    <h4 id="new_trip">Adding a new Trip</h4>
+    <p class="paragraph">
+        To add a new trip, click on the plus button at the bottom right which will take you to the
+        trip-creation form:
+    </p>
+    <div>
+        <img class="left" src="file:///android_asset/add_new_bt.PNG"
+             style="max-width:100%;height:auto;"/>
+        <img class="left" src="file:///android_asset/arrow.png"
+             style="max-width:100%;height:auto;"/>
+        <img class="right" src="file:///android_asset/new_trip.PNG"
+             style="max-width:100%;height:auto;"/>
+    </div>
+    <p class="paragraph">
+    <p style="font-style: italic">Tips to fill out the Form</p>
+    <p style="color:red">! All fields are mandatory !</p>
+    <span style="font-weight: bold">Name:</span> Can be anything from "honeymoon" to "Spring
+    Vacation", or best the destination you are going
+    to like "Rome" or "Belfast". <br/><br/>
+    <span style="font-weight: bold">Country:</span> This should simply be the name of the country
+    you
+    are going to, it will enable the
+    customs and laws section. <br/><br/>
+    <span style="font-weight: bold">Start & End Date</span> These are simply your arrival and
+    departure dates.<br/><br/>
+    Click <span style="font-weight: bold">submit</span> and you will be redirected to the main trips
+    page, where it will be displayed with
+    your other trips.
+    </p>
+    <h4 id="delete_trip">Deleting a Trip</h4>
+    <p class="paragraph">
+        To delete a trip, hold and slide the trip card either to the left or right.
+        It will delete it from your list and will not appear in the archived tab.
+    </p>
+    <h4 id="edit_trip">Editing Trip information</h4>
+    <p class="paragraph">
+        To edit a trip, you go to your trip screen and click on the edit icon on the top right. This
+        will lead you to an editing page
+        where you can edit all the information you previously entered.
+    </p>
+    <img class="center" src="file:///android_asset/edittrip.PNG"
+         style="max-width:100%;height:auto;"/>
+    <h4 id="trip_info">Trip information</h4>
+    <p class="paragraph">
+        Here you can choose to look at your trips' individual Travel,
+        Plans and Customs and Laws information or access google maps.
+    </p>
+    <img class="center" src="file:///android_asset/trippage.PNG"
+         style="max-width:100%;height:auto;"/>
+    <h4 id="travel">Travel</h4>
+    <p class="paragraph">
+        The travel page is for all of your travel information and tickets.
+        Whether you are flying, taking the train or a coach, you can add all <span
+            style="font-weight: bold">transport</span> information here.<br/>
+        The same goes for your <span style="font-weight: bold">accommodation</span>, whether it is a
+        hotel or an Airbnb.<br/><br/>
+        Clicking on individual travel cards will show you all the saved travel information and gives
+        you easy access to your ticket.
+        If you entered the address or a recognizable name of your destination, clicking on it will
+        take you to it in google maps.
+        You can delete the travel cards by swiping left.
+    </p>
+    <img class="center" src="file:///android_asset/create_travel.PNG"
+         style="max-width:100%;height:auto;"/>
+    <h4 id="plans">Plans</h4>
+    <p class="paragraph">
+        The plans page is to keep all of your daily plans in one place.
+        Things you might want to add: A restaurant booking, a day tour, a concert ticket.
+        Simply, anything that you are planning on doing and especially any plans that need a pdf
+        ticket for entry.<br/>
+        You can delete the plans cards by swiping left.<br/><br/>
+
+        Clicking on individual plan cards will show you its saved information and gives you easy
+        access to your ticket.
+        If you entered the address or a recognizable name of your destination, clicking on it will
+        take you to it in google maps. </p>
+
+    <img class="center" src="file:///android_asset/indiee.PNG"
+         style="max-width:100%;height:auto;"/>
+    <p class="paragraph">If you want to add new plan, click on the bottom left plus button in light pink.
+     It will take you to the plan creation form which lets you enter all of its details and add the ticket pdf.</p>
+    <img class="center" src="file:///android_asset/museum_add.PNG"
+         style="max-width:100%;height:auto;"/>
+    <p>After clicking on the "Add Pdf button" you will be asked to choose a pdf document out of your
+        download folder.</p>
+    <img class="center" src="file:///android_asset/pdf_select.PNG"
+         style="max-width:100%;height:auto;"/>
+    <p>You will know whether the pdf has been added to the form when its name appears next to the
+        button.</p>
+    <img class="center" src="file:///android_asset/pdf_added.PNG"
+         style="max-width:100%;height:auto;"/>
+    <p>After clicking submit, the plan will be added to the list of all plans on the Plans page.</p>
+    <img class="center" src="file:///android_asset/show_plan.PNG"
+         style="max-width:100%;height:auto;"/>
+    <h4 id="customs">Customs and Laws</h4>
+    <p class="paragraph">
+        This page will give you the relevant travel information you need in order to have a safe
+        and respectful stay in the country of your destination;.
+        The information is coming from the gov.uk website and is regularly updated.
+    </p>
+    <img class="center" src="file:///android_asset/gov.PNG"
+         style="max-width:100%;height:auto;"/>
+    <h4 id="maps">Maps</h4>
+    <p class="paragraph">
+        This will open google maps as a seperate activity and take you straight to the
+        country you are going to for further exploration and trip-planning.
+    </p>
+    <h4 id="credits">Credits</h4>
+    <p class="paragraph">
+        I have used the backgrounds that I have found in a google image search and are impossible to accredit to anyone.
+        The icons are all from iconfinder.com .
+    </p>
+</div>
+</body>
+</html>

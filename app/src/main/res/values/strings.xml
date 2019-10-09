@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Fernweh</string>
+    <string name="main_activity_name">My Trips</string>
+    <string name="trip1">Paris</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity2_name">   </string>
+    <string name="text_header">Your Trip</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="settings_title">User Manual</string>
+    <string name="travel_label">Travel</string>
+    <string name="map_label">Map</string>
+    <string name="plans_label">Plans</string>
+    <string name="customslaws_label">Customs</string>
+    <string name="trip_name">My Trip</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyAcBd9Fa4Kn0saagl1k8arzUX_C0LaG0JI</string>
+    <string name="travelheader">Travel</string>
+    <string name="planheader">Plans</string>
+    <string name="share">Share</string>
+    <string name="share_subject">Holidy PDF ticket</string>
+    <string name="share_message">Here is the PDF ticket for the holiday!</string>
+    <string name="share_chooser_title">Share to</string>
+
+    <string name="form_header_trips">Create a new Trip</string>
+    <string name="form_header_travel">Create a new Travel</string>
+    <string name="form_header_plans">Create a new Plan</string>
+
+    <string name="form_name">Name</string>
+    <string name="tripCountry">Country</string>
+    <string name="form_loc">Destination</string>
+
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="optional">Optional</string>
+
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+
+    <string name="trip_button_name">Submit</string>
+
+    <string name="planname">Montmartre Gallery</string>
+    <string name="travelname">Flight EMA - CDG</string>
+    <string name="when">When: </string>
+    <string name="where">Where: </string>
+    <string name="tickets">Your tickets</string>
+    <string name="add_pdf">ADD PDF</string>
+    <string name="Date">Date:</string>
+    <string name="Time">Time:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

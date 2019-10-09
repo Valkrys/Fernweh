@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00909E</color>
+    <color name="colorPrimaryDark">#00909E</color>
+    <color name="colorAccent">#89DBEC</color>
+    <color name="add">#EF959D</color>
+    <color name="map_card">#FA9D00</color>
+    <color name="plans_card">#B00051</color>
+    <color name="customs_card">#89DBEC</color>
+    <color name="travel_card">#F68370</color>
+    <color name="plain">#E6FFFF</color>
+    <color name="my_text_color">#ffff</color>
+    <color name="background_forms">#dadfe1</color>
+    <color name="form_text">#000000</color>
+    <color name="backbutt">#696969</color>
+    <color name="clickable">#5050ff</color>
+</resources>

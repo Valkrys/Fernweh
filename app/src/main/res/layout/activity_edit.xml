@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_forms"
+    android:orientation="vertical"
+    android:paddingTop="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/form_header_plans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:textColor="@color/form_text"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_text_color"
+            android:hint="@string/form_name"
+            android:inputType="textNoSuggestions"
+            android:padding="20dp"
+            android:textColor="@color/form_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+        <EditText
+            android:id="@+id/editLoc"
+            android:layout_width="425dp"
+            android:layout_height="wrap_content"
+            android:background="@color/my_text_color"
+            android:hint="@string/form_loc"
+            android:inputType="textNoSuggestions"
+            android:padding="20dp"
+            android:textColor="@color/form_text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/editStartDate"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:background="@color/my_text_color"
+            android:focusable="false"
+            android:hint="@string/start_date"
+            android:inputType="date"
+            android:padding="20dp"
+            android:textColor="@color/form_text" />
+        <EditText
+            android:id="@+id/EditStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_text_color"
+            android:focusable="false"
+            android:hint="@string/start_time"
+            android:inputType="time"
+            android:padding="20dp"
+            android:textColor="@color/form_text"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/endtimeheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/optional"
+        android:textSize="13sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editEndDate"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:background="@color/my_text_color"
+            android:focusable="false"
+            android:hint="@string/end_date"
+            android:inputType="date"
+            android:padding="20dp"
+            android:textColor="@color/form_text" />
+        <EditText
+            android:id="@+id/editEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_text_color"
+            android:focusable="false"
+            android:hint="@string/end_time"
+            android:inputType="time"
+            android:padding="20dp"
+            android:textColor="@color/form_text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/editBT"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:background="@color/add"
+            android:text="@string/trip_button_name"
+            android:textColor="@color/my_text_color"
+            android:radius="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

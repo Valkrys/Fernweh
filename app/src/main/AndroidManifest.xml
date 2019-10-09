@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fernweh">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACTION_OPEN_DOCUMENT"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launching"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.fernweh.SplashActivity" android:theme="@style/SplashTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.fernweh.NotificationPublisher"
+            android:enabled="true">
+        </receiver>
+
+        <activity
+            android:name="com.example.fernweh.EditActivity"
+            android:label=" "
+            android:theme="@style/TransparentActionbarTheme2" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.fernweh.MyFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.example.fernweh.PlansIndividual"
+            android:label=""
+            android:parentActivityName="com.example.fernweh.PlansActivity"
+            android:theme="@style/TransparentActionbarTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernweh.PlansActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fernweh.TravelIndividual"
+            android:label=""
+            android:parentActivityName="com.example.fernweh.TravelActivity"
+            android:theme="@style/TransparentActionbarTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernweh.TravelActivity" />
+        </activity>
+
+        <provider
+            android:name="com.example.fernweh.DBProvider"
+            android:authorities="com.example.fernweh"
+            android:exported="false"
+            android:protectionLevel="signature"
+            android:syncable="true" />
+
+        <activity
+            android:name="com.example.fernweh.FormPlansActivity"
+            android:label=""
+            android:parentActivityName="com.example.fernweh.PlansActivity"
+            android:theme="@style/TransparentActionbarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernweh.PlansActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fernweh.FormTravelActivity"
+            android:label=""
+            android:parentActivityName="com.example.fernweh.TravelActivity"
+            android:theme="@style/TransparentActionbarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernweh.TravelActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fernweh.FormTripActivity"
+            android:label="@string/activity2_name"
+            android:parentActivityName="com.example.fernweh.MainActivity"
+            android:theme="@style/TransparentActionbarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernweh.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fernweh.PlansActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/TransparentActionbarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernweh.SecondActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fernweh.CustomsActivity"
+            android:label="Customs and Laws"
+            android:parentActivityName="com.example.fernweh.SecondActivity"
+            android:theme="@style/Custom">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernweh.SecondActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fernweh.TravelActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.fernweh.SecondActivity"
+            android:theme="@style/TransparentActionbarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernweh.SecondActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fernweh.MainActivity"
+            android:label=""
+            android:theme="@style/NoActionBar2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapsMarkerActivity"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.fernweh.SecondActivity"
+            android:label="@string/activity2_name"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.fernweh.MainActivity"
+            android:theme="@style/TransparentActionbarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.fernweh_fuck_off.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.fernweh.SettingsActivity"
+            android:label="@string/settings_title"
+            android:parentActivityName="com.example.fernweh.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.fernweh_fuck_off.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>
